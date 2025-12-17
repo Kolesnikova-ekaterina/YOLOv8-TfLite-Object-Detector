@@ -1,6 +1,7 @@
 *.iml
 .gradle
 /local.properties
+/.idea
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -13,3 +14,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+/MyYOLOProject/data/*
+/MyYOLOProject/dataset
+/MyYOLOProject/results
+/MyYOLOProject/runs
+

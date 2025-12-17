@@ -1,0 +1,4 @@
+Soap
+liquid_soap
+toothbrush
+toothpaste

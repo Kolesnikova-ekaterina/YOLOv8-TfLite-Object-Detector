@@ -1,0 +1,16 @@
+services:
+  yolo11-python:
+    build: .
+    container_name: yolo11-python
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=""
+    volumes:
+      - ./dataset:/data:ro
+      - ./dataset/valid:/custom-valid:ro
+      - ./dataset/test:/custom-test:ro  
+      - ./results:/output
+      - ./runs:/app/runs
+      - "C:/Users/Clara/Downloads/My First Project.v3i.yolov11:/datasets"
+    stdin_open: true
+    tty: true

@@ -19,6 +19,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5"
         app:scaleType="fillStart" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+
 
     <com.surendramaran.yolov8tflite.OverlayView
         android:id="@+id/overlay"
@@ -50,25 +57,20 @@
         android:paddingVertical="4dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <ToggleButton
-            android:id="@+id/isGpu"
-            android:background="@color/orange"
+
+
+        <Button
+            android:id="@+id/buttonLoadImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textOff="@string/gpu"
-            android:textOn="@string/gpu"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
+            android:text="Load Image from Gallery" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--    <ImageView-->
-<!--        android:id="@+id/ivTop"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"/>-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ivTop"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"/>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
